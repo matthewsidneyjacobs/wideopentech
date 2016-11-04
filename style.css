@@ -1,0 +1,350 @@
+    * {
+    box-sizing: border-box;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*jumbotron elements */
+
+.jumbotron {
+    height: 50vh;
+    width: 100%;
+    background-image: url('img/wot-masthead-dark.jpg');
+    background-size: 600px;
+    background-position-x: -136px;
+    background-position-y: 83px;
+    /*background-attachment: fixed;*/
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron img {
+    height: 5vh;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 25px;
+    line-height: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>img {
+    height: 10vh;
+    font-size: 34px;
+}
+
+.icon-bars {
+    height: 10vh;
+    font-size: 34px;
+    line-height: 200%;
+}
+
+.menu-list {
+    display: none;
+}
+
+.center_container {
+  width: 80%;
+  height: 30%;
+  position:relative;;
+  /*bottom:80px;*/
+  margin:auto;
+  display: flex;
+  /*border: 1px solid black;*/
+  flex-direction: column;
+  align-content: center;
+}
+
+.center_text {
+  font-size: 76px;
+  color: #F0F0F0;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  bottom:50px;
+}
+
+.top_line {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #F0F0F0;
+  font-weight: bold;
+  height: auto;
+  position: relative;
+  bottom:20px;
+}
+
+.bottom_text {
+  font-family: "Oswald", sans-serif;
+  color: #F0F0F0;
+  position: relative;
+  bottom:80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.jumbo_btn {
+  background-color: #bdd436;
+  border: none;
+  color: white;
+
+  margin:auto;
+  padding: 26px 16px;
+  border-radius: 25px;
+  width:100%;
+  position: relative;
+  bottom:80px;
+}
+
+.buttontext {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*main content*/
+
+.main-content {
+    text-align: center;
+    width: 100%;
+    background-color: #F0F0F0;
+    font-family: "Open Sans", sans-serif;
+    padding: 15px 8px;
+    line-height: 36px;
+    font-size: 24px;
+    color: #6A787C;
+}
+
+.cropped_tool {
+  background-image: url('img/cropped_tool.png');
+  background-size: 79%;
+  /*background-repeat: no-repeat;*/
+  width: 100%;
+  height:25vh;
+  color: red;
+  background-position-x: 27px;
+  background-position-y: -349px;
+}
+
+.learnabout {
+    width: 100%;
+    /*border: 1px solid yellow;*/
+    height: 120vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.learn_top{
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.learn_middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learn_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.picture {
+
+}
+
+.l_toptext {
+  font-family: "Open Sans", sans-serif;
+}
+
+.l_bottomtext {
+  font-family: "Open Sans", sans-serif;
+  color: #bdd436;
+}
+
+.right_arrow {
+
+}
+
+
+.services-container {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding:15px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-top{
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+}
+
+.services-middle {
+  border: 1px solid black;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.services_boxes {
+  width:100%;
+  padding:15px 0px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services_bottom {
+  padding:15px;
+}
+.contact-btn {
+  background-color: #bdd436;
+  border: none;
+  color: white;
+  margin:auto;
+  padding: 26px 16px;
+  border-radius: 25px;
+  width:100%;
+}
+
+.companies-we-work {
+    height: 200vh;
+    width: 100%;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.contact_us {
+    width: 100%;
+    height: 5vh;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media (min-width: 426px) {
+    nav {
+        background-color: transparent;
+        font-family: "Lato";
+        font-size: 14px;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .menu-list {
+        display: inline;
+        color: white;
+    }
+    .menu-list>li {
+        display: inline;
+        font-size: 14px;
+        padding: 0px, 15px;
+        font-size: 16px;
+        line-height: 23px;
+        margin-right: 20px;
+    }
+    .jumbotron {
+        height: 50vh;
+        width: 100%;
+        background-image: url('img/wot-masthead-dark.jpg');
+        background-size: 1008px;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        background-attachment: fixed;
+    }
+    .center_container {
+      width: 80%;
+      height: 30%;
+      position:relative;;
+      bottom:80px;
+      margin:auto;
+      display: flex;
+      /*border: 1px solid black;*/
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .center_text {
+      flex: grow;
+      color: #F0F0F0;
+      font-size: 180px;
+      font-family: "Oswald", sans-serif;
+      position: relative;
+      bottom:50px;
+    }
+
+    .top_line {
+      text-align: left;
+      font-family: "Oswald", sans-serif;
+      color: #F0F0F0;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .bottom_text {
+      font-family: "Oswald", sans-serif;
+      color: #F0F0F0;
+      position: relative;
+      bottom:80px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .jumbo_btn {
+      background-color: #bdd436;
+      border: none;
+      color: white;
+
+      margin:auto;
+      padding: 26px 16px;
+      border-radius: 25px;
+      width:100%;
+      position: relative;
+      bottom:80px;
+    }
+
+    .buttontext {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .cropped_tool {
+      background-image: url('img/cropped_tool.png');
+      background-size: auto;
+      /*background-repeat: no-repeat;*/
+      width: 100%;
+      height:25vh;
+      color: red;
+      background-position-x: 27px;
+      background-position-y: -344px;
+    }
